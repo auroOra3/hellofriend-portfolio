@@ -1,0 +1,42 @@
+/* GENERAL */
+
+body, 
+button, 
+h1, h2, h4, h5, p, 
+#grid_topL_btn, 
+#grid_topR_btn, 
+#grid_bottomL_btn, 
+#grid_bottomR_btn, 
+article, 
+.btn_single, 
+.btn_double, 
+.arrow {
+    transition: background-color 1.5s, color 1.5s, border-color 1.5s;
+}
+
+/* LIGHT MODE */
+
+:root {
+    /* Colors */
+    --bg-light: #D7EDEE;
+    --bg-dark: #556F80;
+    --bg-transparent: rgba(255, 255, 255, 0.5);
+    --border: 3px solid #556F80;
+    --text-color: #556F80;
+    --text-color-2: #D7EDEE;
+    --btn-bg: #F3A683;
+    transition: background-color 1.5s, color 1.5s, border-color 1.5s;
+}
+
+/* DARK MODE */
+
+:root.dark-mode {
+    --bg-light: #98AEBE;
+    --bg-dark: #556F80;
+    --bg-transparent: rgba(85, 111, 128, 0.5);
+    --border: 3px solid #556F80;
+    --text-color: #556F80;
+    --text-color-2: #D7EDEE;
+    --btn-bg: #98AEBE;
+    transition: background-color 1.5s, color 1.5s, border-color 1.5s;
+}
