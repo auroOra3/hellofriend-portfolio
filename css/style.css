@@ -381,20 +381,40 @@ button {
 .button-container {
     padding: 5%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end; /* Buttons am rechten Rand */
+    gap: 10px; /* Abstand zwischen den Buttons */
 }
 
 .contact-text {
     color: var(--text-color);
 }
 
-.btn-contact {
-    background-color: var(--bg-dark);
-    color: var(--text-color-2);
-    border-radius: 15%;
+.btn-contact, .btn-linkedin {
+    background-color: var(--bg-dark); 
+    color: var(--text-color-2); 
     cursor: pointer;
-    border: var(--border);
-    text-align: start;
+    border: 1px solid var(--border); 
+    text-align: center;
+    padding: 10px 15px; 
+    font-size: 16px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-contact:hover, .btn-linkedin:hover {
+    transform: translateY(-2px); 
+}
+
+.btn-contact i, .btn-linkedin i {
+    margin-right: 8px;
+}
+
+.btn-linkedin {
+    background-color: #0077B5;
+    color: white; 
+    border: none;
 }
 
 /* @media (max-width: 768px) {
